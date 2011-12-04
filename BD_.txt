@@ -1,0 +1,56 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Servidor: localhost
+-- Tiempo de generación: 04-12-2011 a las 16:47:28
+-- Versión del servidor: 5.1.36
+-- Versión de PHP: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Base de datos: `innova`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `alumno`
+--
+
+CREATE TABLE IF NOT EXISTS `alumno` (
+  `id` int(15) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(40) NOT NULL,
+  `apellido` varchar(40) NOT NULL,
+  `provincia` varchar(40) NOT NULL,
+  `distrito` varchar(40) NOT NULL,
+  `direccion` varchar(50) NOT NULL,
+  `telefono` varchar(40) NOT NULL,
+  `edad` varchar(10) NOT NULL,
+  `usuario` varchar(40) NOT NULL,
+  `pass` varchar(30) NOT NULL,
+  `correo` varchar(40) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
+
+--
+-- Volcar la base de datos para la tabla `alumno`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `grados`
+--
+
+CREATE TABLE IF NOT EXISTS `grados` (
+  `idusuario` int(10) NOT NULL,
+  `grado` int(10) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Volcar la base de datos para la tabla `grados`
+--
+
